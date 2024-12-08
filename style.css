@@ -1,7 +1,7 @@
 
 *{
-    margin: 0;
-    padding: 0;
+    margin: 10;
+    padding: 10;
     box-sizing: border-box;
     background-color: blueviolet;
 }
@@ -22,6 +22,10 @@ a{
 header nav {
     display: flex;
     justify-content: space-between;
+}
+
+header nav .logo{
+    margin-top: 12px;
 }
 
 header nav .logo a {
@@ -68,6 +72,48 @@ background-color: white;
 
 }
 
+.content {
+    color: white;
+    height: calc(100vh - 100px);
+    padding-top: 150px;
+}
+
+.content h1 {
+    font-size: 60px;
+    text-align: center;
+}
+
+.content p {
+    font-size: 24px;
+    text-align: center;
+    margin-top: 32px;
+}
+
+.content .links {
+    display: flex;
+    justify-content: center;
+    margin-top: 48px;
+    column-gap: 16px;
+}
+
+.content .links a {
+    background-color: white;
+    padding: 20px;
+    width: 280px;
+    color: black;
+    text-align: center;
+    font-size: 18px;
+    text-decoration: none;
+    border-radius: 56px;
+    transition: all .25s ease-in;
+}
+
+.content .links a:hover {
+    background-color: #0ba2c0;
+    color: white;
+}
+
+
 @media(max-width:576px) {
     .container {
         padding-top: 10px;
@@ -76,9 +122,31 @@ background-color: white;
     }
 
     .logo{
-        padding-top: 10px;
+        padding-top: 1px;
     }
 
     .menu .menu-button{
 display: none;    }
+
+.content {
+    padding-top: 50px;
+}
+
+.content h1 {
+    font-size: 36px;
+}
+
+.content p {
+    padding-top: 16px;
+}
+
+.content .links {
+    flex-direction: column;
+    align-items: center;
+    row-gap: 1rem;
+}
+
+.content .links a {
+    padding: 14px;
+}
 }
